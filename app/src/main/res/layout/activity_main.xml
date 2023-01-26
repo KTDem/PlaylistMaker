@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/purple_200"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="start"
+        android:text="@string/playlist_maker"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="17dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart= "17dp"
+        android:layout_marginEnd= "15dp"
+        android:layout_marginTop= "40dp"
+        android:layout_marginBottom= "28dp"
+        >
+
+
+        <Button
+            android:id="@+id/main_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#ffffff"
+            android:text="@string/button_search"
+            android:textSize="20sp"
+            android:textColor="#1A1B22"
+            android:textAllCaps="false"
+            app:icon="@drawable/icon_search"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconTint="@color/black"
+            app:cornerRadius="20dp"/>
+
+        <Button
+            android:id="@+id/main_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#ffffff"
+            android:text="@string/button_collection"
+            android:textSize="20sp"
+            android:textColor="#1A1B22"
+            android:textAllCaps="false"
+            app:icon="@drawable/icon_collection"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconTint="@color/black"
+            app:cornerRadius="20dp"
+            />
+
+        <Button
+            android:id="@+id/main_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#ffffff"
+            android:text="@string/button_settings"
+            android:textSize="20sp"
+            android:textColor="#1A1B22"
+            android:textAllCaps="false"
+            app:icon="@drawable/icon_settings"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconTint="@color/black"
+            app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
