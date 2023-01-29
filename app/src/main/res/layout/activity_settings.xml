@@ -3,7 +3,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:padding="20dp"
     >
@@ -27,8 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_settings"
-            android:textColor="#000000"
-            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -44,12 +44,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/settings_text"
             android:layout_gravity="center_vertical"
-            android:backgroundTint="#ffffff"
-            android:text="Темная тема"
-            android:textAllCaps="false"
-            android:textColor="#1A1B22" />
+            android:backgroundTint="@color/white"
+            android:text="@string/dark_theme"
+            android:textColor="@color/black" />
 
         <Switch
             android:layout_width="wrap_content"
@@ -70,12 +69,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/settings_text"
             android:layout_gravity="center_vertical"
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="@color/white"
             android:text="@string/share"
-            android:textAllCaps="false"
-            android:textColor="#1A1B22"/>
+            android:textColor="@color/black"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -96,12 +94,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/settings_text"
             android:layout_gravity="center_vertical"
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="@color/white"
             android:text="@string/settings_support"
-            android:textAllCaps="false"
-            android:textColor="#1A1B22"/>
+            android:textColor="@color/black"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -121,12 +118,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/settings_text"
             android:layout_gravity="center_vertical"
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="@color/white"
             android:text="@string/user_agreement"
-            android:textAllCaps="false"
-            android:textColor="#1A1B22"/>
+            android:textColor="@color/black"/>
 
         <ImageView
             android:layout_width="12dp"
